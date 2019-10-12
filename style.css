@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: hsl(239, 100%, 95%);
+
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    display: inline-block;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 8px;
+
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+}
+
+.btn {
+    padding: 8px 12px;
+    background-color: hsl(239, 100%, 51%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 0 solid black;
+    border-radius: 1000000000px;
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 4px 5px 6px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 5px 6px 3px rgba(0,0,0,0.2);
+    box-shadow: 4px 5px 6px 3px rgba(0,0,0,0.2);
+
+    -webkit-transition: -webkit-box-shadow 0.2s;
+    -moz-transition: -moz-box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.input {
+    padding: 6px 8px;
+    font-size: 16px;
+
+    border: 0px solid red;
+    border-radius: 1000000000px;
+
+    width: 100%;
+    display: block;
+    -webkit-box-shadow: 4px 5px 6px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 5px 6px 3px rgba(0,0,0,0.2);
+    box-shadow: 4px 5px 6px 3px rgba(0,0,0,0.2);
+    margin: 16px 0;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.input::placeholder {
+    color: hsla(239, 100%, 51%, 0.6);
+}
+
+#confetti {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        display: block;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(20px);
+    }
+
+    40% {
+        transform: translateX(-40px);
+    }
+
+    60% {
+        transform: translateX(15px);
+    }
+
+    80% {
+        transform: translateX(25px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}
+
+#greeting {
+    display: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Ч.Р.Д. Кала!!!</title>
+</head>
+<body>
+    <div class="card" id="login-card">
+        <form id="login-form">
+            <h2 class="card__title">Моля въведете име и парола!</h2>
+            <input type="text" class="input" placeholder="Име" id="name-input">
+            <input type="password" class="input" placeholder="Парола" id="password-input">
+            <button class="btn btn--primary" id="login-submit">Нека партито започне</button>
+        </form>
+    </div>
+
+    <div class="card fadeIn" id="greeting">
+        <h1>Честит рожден ден, Кала!</h1>
+        <img src="kala.jpg" alt="Калата като пич!">
+        <p>Да си жив и здрав, много щастлив все така готин и всичко най-хубаво
+        да ти се случва!</p>
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="confetti.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
